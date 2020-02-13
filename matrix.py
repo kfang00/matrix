@@ -12,12 +12,31 @@ import math
 #print the matrix such that it looks like
 #the template in the top comment
 def print_matrix( matrix ):
-    pass
+    x = str()
+    y = str()
+    z = str()
+    one = str()
+    for li in matrix:
+        x += li[0] + " "
+        y += li[1] + " "
+        z += li[2] + " "
+        one += li[3] + " "
+    print(x)
+    print(y)
+    print(z)
+    print(one)
 
 #turn the paramter matrix into an identity matrix
 #you may assume matrix is square
 def ident( matrix ):
-    pass
+    id = [[1, 0, 0, 0], [0, 1, 0, 0] ,[0, 0, 1, 0], [0, 0, 0, 1]]
+    a = 0
+    b = 0
+    while a < len(matrix):
+        while b < len(4):
+            matrix[a][b] = matrix[a][b] * id[a][b]
+
+
 
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
