@@ -30,11 +30,19 @@ def print_matrix( matrix ):
 #you may assume matrix is square
 def ident( matrix ):
     id = [[1, 0, 0, 0], [0, 1, 0, 0] ,[0, 0, 1, 0], [0, 0, 0, 1]]
+    copy = new_matrix(4, len(matrix))
+    c = 0
+    d = 0
+    while c < len(matrix):
+        while d < len(4):
+            copy[c][d] = matrix[c][d]
+            d += 1
+        c += 1
     a = 0
     b = 0
     while a < len(matrix):
         while b < len(4):
-            matrix[a][b] = matrix[a][b] * id[a][b]
+            matrix[a][b] = copy[a][b] * id[a][b]
             b += 1
         a += 1
 
