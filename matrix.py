@@ -35,6 +35,8 @@ def ident( matrix ):
     while a < len(matrix):
         while b < len(4):
             matrix[a][b] = matrix[a][b] * id[a][b]
+            b += 1
+        a += 1
 
 
 
