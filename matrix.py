@@ -34,24 +34,48 @@ def ident( matrix ):
     c = 0
     d = 0
     while c < len(matrix):
-        while d < len(4):
+        while d < 4:
             copy[c][d] = matrix[c][d]
             d += 1
         c += 1
-    a = 0
-    b = 0
-    while a < len(matrix):
-        while b < len(4):
-            matrix[a][b] = copy[a][b] * id[a][b]
-            b += 1
-        a += 1
+    e = 0
+    while e < len(id):
+        a = 0
+        while a < len(matrix):
+	    sum = 0
+	    b = 0
+            while b < 4:
+                sum += copy[a][b] * id[e][b]
+                b += 1
+	    matrix[a][e] = sum
+            a += 1
+        e += 1
 
 
 
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
-    pass
+    copy = new_matrix(4, len(m2))
+    c = 0
+    d = 0
+    while c < len(m2):
+        while d < 4:
+            copy[c][d] = m2[c][d]
+            d += 1
+        c += 1
+    e = 0
+    while e < len(m1):
+        a = 0
+        while a < len(m2):
+	    sum = 0
+	    b = 0
+            while b < len(m2[a]):
+                sum += copy[a][b] * id[e][b]
+                b += 1
+	    m2[a][e] = sum
+            a += 1
+        e += 1
 
 
 
