@@ -29,3 +29,6 @@ add_edge(matrix, 120, 400, 0, 380, 400, 0)
 
 draw_lines( matrix, screen, color )
 display(screen)
+save_ppm(s, 'binary.ppm')
+save_ppm_ascii(s, 'ascii.ppm')
+save_extension(s, 'img.png')
