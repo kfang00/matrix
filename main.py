@@ -34,10 +34,22 @@ add_edge(glasses, 360, 150, 0, 360, 200, 0)
 add_edge(glasses, 260, 200, 0, 260, 150, 0)
 add_edge(glasses, 240, 150, 0, 240, 200, 0)
 add_edge(glasses, 140, 200, 0, 140, 150, 0)
+clothes = []
+add_edge(clothes, 120, 300, 0, 150, 300, 0)
+add_edge(clothes, 150, 340, 0, 120, 340, 0)
+add_edge(clothes, 120, 400, 0, 180, 400, 0)
+add_edge(clothes, 180, 440, 0, 250, 440, 0)
+add_edge(clothes, 250, 400, 0, 250, 440, 0)
+add_edge(clothes, 320, 440, 0, 320, 400, 0)
+add_edge(clothes, 180, 400, 0, 380, 400, 0)
+add_edge(clothes, 380, 340, 0, 350, 340, 0)
+add_edge(clothes, 350, 300, 0, 380, 300, 0)
 
 draw_lines( body, screen, color )
 color = [ 255, 255, 255 ]
 draw_lines( glasses, screen, color )
+color = [ 0, 111, 255 ]
+draw_lines( clothes, screen, color )
 display(screen)
 save_ppm(screen, 'binary.ppm')
 save_ppm_ascii(screen, 'ascii.ppm')
