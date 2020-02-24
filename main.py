@@ -57,8 +57,8 @@ eye1 = []
 add_edge(eye1, 175, 125, 0, 225, 125, 0)
 add_edge(eye1, 225, 175, 0, 175, 175, 0)
 eye2 = []
-add_edge(eye1, 275, 125, 0, 325, 125, 0)
-add_edge(eye1, 325, 175, 0, 275, 175, 0)
+add_edge(eye2, 275, 125, 0, 325, 125, 0)
+add_edge(eye2, 325, 175, 0, 275, 175, 0)
 
 draw_lines( body, screen, color )
 draw_lines( feet, screen, color )
