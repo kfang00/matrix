@@ -54,11 +54,17 @@ add_edge(feet, 150, 470, 0, 250, 470, 0)
 add_edge(feet, 250, 440, 0, 250, 470, 0)
 add_edge(feet, 350, 470, 0, 350, 440, 0)
 eye1 = []
-add_edge(eye1, 175, 125, 0, 225, 125, 0)
-add_edge(eye1, 225, 175, 0, 175, 175, 0)
+add_edge(eye1, 175, 125, 0, 215, 125, 0)
+add_edge(eye1, 215, 165, 0, 175, 165, 0)
 eye2 = []
-add_edge(eye2, 275, 125, 0, 325, 125, 0)
-add_edge(eye2, 325, 175, 0, 275, 175, 0)
+add_edge(eye2, 285, 125, 0, 325, 125, 0)
+add_edge(eye2, 325, 165, 0, 285, 165, 0)
+mouth = []
+add_edge(mouth, 225, 250, 0, 275, 250, 0)
+pocket = []
+add_edge(pocket, 225, 320, 0, 275, 320, 0)
+add_edge(pocket, 275, 360, 0, 250, 375, 0)
+add_edge(pocket, 225, 360, 0, 225, 320, 0)
 
 draw_lines( body, screen, color )
 draw_lines( feet, screen, color )
@@ -66,10 +72,12 @@ color = [ 175, 178, 182 ]
 draw_lines( glasses, screen, color )
 color = [ 0, 111, 255 ]
 draw_lines( clothes, screen, color )
+draw_lines( pocket, screen, color )
 color = [ 255, 255, 255 ]
 draw_lines( hair, screen, color )
 draw_lines( eye1, screen, color )
 draw_lines( eye2, screen, color )
+draw_lines( mouth, screen, color )
 display(screen)
 save_ppm(screen, 'binary.ppm')
 save_ppm_ascii(screen, 'ascii.ppm')
