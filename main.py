@@ -46,8 +46,8 @@ add_edge(clothes, 380, 340, 0, 350, 340, 0)
 add_edge(clothes, 350, 300, 0, 380, 300, 0)
 hair= []
 add_edge(hair, 250, 50, 0, 250, 20, 0)
-add_edge(hair, 250, 50, 0, 235, 35, 0)
-add_edge(hair, 250, 50, 0, 265, 65, 0)
+add_edge(hair, 250, 50, 0, 235, 25, 0)
+add_edge(hair, 250, 50, 0, 265, 25, 0)
 feet = []
 add_edge(feet, 180, 440, 0, 150, 440, 0)
 add_edge(feet, 150, 470, 0, 250, 470, 0)
@@ -62,11 +62,11 @@ add_edge(eye2, 325, 175, 0, 275, 175, 0)
 
 draw_lines( body, screen, color )
 draw_lines( feet, screen, color )
-color = [ 116, 122, 129 ]
+color = [ 175, 178, 182 ]
 draw_lines( glasses, screen, color )
 color = [ 0, 111, 255 ]
 draw_lines( clothes, screen, color )
-color = [ 0, 0, 0 ]
+color = [ 255, 255, 255 ]
 draw_lines( hair, screen, color )
 draw_lines( eye1, screen, color )
 draw_lines( eye2, screen, color )
